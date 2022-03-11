@@ -8,13 +8,17 @@
     <style>
         body{
             font-family: Arial, sans-serif;
-            font-size: 2vw
+            font-size: 0.6cm;
+            background: url("images/bg.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            opacity: 1;
         }
-        tr:hover{
-            background-color: #96b399;
+        tr:hover body{
+            opacity: 0.1;
         }
         tr:active{
-            background-color: #516853;
+            background-color: #c7ccd1;
         }
         td {
             padding: 0;
@@ -23,26 +27,36 @@
             width: 100%;
             max-width: 100%;
             height: auto;
+            border-radius: 10px;
         }
         table {
             /* padding: 5%; */
             /* background-color: #516853; */
             border-spacing: 0;
         }
+        table {
+            padding: 10px;
+            border: black;
+            border-style: outset;
+            border-radius: 10px;
+            
+        }
     </style>
     
 </head>
-<body style="margin: 2%;" bgcolor="#BFD3C1">
+<body style="margin: 2%;" bgcolor="#f1f2f3">
     
-    <h1 align="center">Welcome to FestiVar</h1>
-    <h5 align="center">Enjoy the festive season with your family. Say safe (tentative)</h5>
-    <table width="60%" align="center">
+    <h1 align="center"><u>Welcome to FestiVar</u></h1>
+    <h5 align="center">Enjoy the festive season with your family. Shady safe (tentative)</h5>
+    <div align="center">
+    <table bgcolor="#f6f6f6" width="60%" align="center">
         <tr onclick="window.location='https://www.google.com'">
             <td width="50%"><p align="center">Makar Sakranti</p></td>
             <td><img src="images/makar-sankranti.jpg" alt="Makar Sakranti" srcset=""></td>            
         </tr>
         <tr>
             <td><img src="images/maha-shivratri.jpg" alt="Maha Shivratri" srcset=""></td>
+            
             <td width="50%"><p align="center">Maha Shivratri</p></td>
         </tr>
         <tr>
@@ -74,5 +88,9 @@
             <td><img src="images/christmas.jpg" alt="" srcset=""></td>            
         </tr>
     </table>
+    </div>
+    <footer align="center">
+        <p style="margin: 0;"><font size="1vw">&copy;Harsh & Nitin</font></p>
+    </footer>
 </body>
 </html>
